@@ -1,0 +1,697 @@
+[
+  {
+    "ts": "2022-12-31T04:16:39.443Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "p39nycxzit31"
+            }
+          },
+          "id": "blogPost",
+          "type": "ContentType",
+          "createdAt": "2022-01-25T21:40:59.817Z",
+          "updatedAt": "2022-02-08T21:40:11.398Z",
+          "environment": {
+            "sys": {
+              "id": "master",
+              "type": "Link",
+              "linkType": "Environment"
+            }
+          },
+          "publishedVersion": 11,
+          "publishedAt": "2022-02-08T21:40:11.398Z",
+          "firstPublishedAt": "2022-01-25T21:41:00.157Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4SDtqAl8Y6iEC5454bbsbU"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4SDtqAl8Y6iEC5454bbsbU"
+            }
+          },
+          "publishedCounter": 6,
+          "version": 12,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "4SDtqAl8Y6iEC5454bbsbU"
+            }
+          }
+        },
+        "displayField": "slug",
+        "name": "Blog Post",
+        "description": "",
+        "fields": [
+          {
+            "id": "slug",
+            "name": "slug",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+              {
+                "unique": true
+              },
+              {
+                "regexp": {
+                  "pattern": "^[a-zA-Z0-9\\/_-]*$",
+                  "flags": null
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "date",
+            "name": "Date",
+            "type": "Date",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "image",
+            "name": "Image",
+            "type": "Link",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          },
+          {
+            "id": "body",
+            "name": "Body",
+            "type": "RichText",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "enabledMarks": [
+                  "bold",
+                  "italic",
+                  "underline",
+                  "code"
+                ],
+                "message": "Only bold, italic, underline, and code marks are allowed"
+              },
+              {
+                "enabledNodeTypes": [
+                  "heading-1",
+                  "heading-2",
+                  "heading-3",
+                  "heading-4",
+                  "heading-5",
+                  "heading-6",
+                  "ordered-list",
+                  "unordered-list",
+                  "hr",
+                  "blockquote",
+                  "embedded-entry-block",
+                  "embedded-asset-block",
+                  "hyperlink",
+                  "entry-hyperlink",
+                  "asset-hyperlink",
+                  "embedded-entry-inline"
+                ],
+                "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+              },
+              {
+                "nodes": {
+                }
+              }
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "excerpt",
+            "name": "Excerpt",
+            "type": "Text",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "heroImage"
+              ]
+            },
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "description"
+              ]
+            },
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "author"
+              ]
+            },
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "publishDate"
+              ]
+            },
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "tags"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "523ugk1t5e7p"
+                }
+              },
+              "id": "blogPost",
+              "type": "ContentType",
+              "createdAt": "2022-12-25T09:48:14.955Z",
+              "updatedAt": "2022-12-25T09:48:14.955Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "b767e984-9bf9-4bf2-8f98-a4e40bdcb835"
+                }
+              },
+              "revision": 1
+            },
+            "displayField": "zmwp",
+            "name": "Blog Post",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "zmwp",
+                "apiName": "title",
+                "name": "Title",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "gfbv",
+                "apiName": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "eyht",
+                "apiName": "heroImage",
+                "name": "Hero Image",
+                "type": "Link",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              },
+              {
+                "id": "nkac",
+                "apiName": "description",
+                "name": "Description",
+                "type": "RichText",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "imiy",
+                "apiName": "body",
+                "name": "Body",
+                "type": "RichText",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "pzrf",
+                "apiName": "author",
+                "name": "Author",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "linkContentType": [
+                      "person"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Entry"
+              },
+              {
+                "id": "osal",
+                "apiName": "publishDate",
+                "name": "Publish Date",
+                "type": "Date",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "edit",
+                "apiName": "tags",
+                "name": "Tags",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "items": {
+                  "type": "Symbol",
+                  "validations": [
+                    {
+                      "in": [
+                        "general",
+                        "javascript",
+                        "static-sites"
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/523ugk1t5e7p/environments/master/content_types/blogPost",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.20; feature library-import; sdk contentful-management.js/10.26.0; platform node.js/v18.12.1; os Windows/v18.12.1;",
+            "CF-Sequence": "55834e09-59d6-4827-949e-94a54bbaf613",
+            "Authorization": "Bearer ...sL7eA",
+            "user-agent": "node.js/v18.12.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 2,
+            "Content-Length": 1573
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"slug\",\"name\":\"Blog Post\",\"description\":\"\",\"fields\":[{\"id\":\"slug\",\"name\":\"slug\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[{\"unique\":true},{\"regexp\":{\"pattern\":\"^[a-zA-Z0-9\\\\/_-]*$\",\"flags\":null}}],\"disabled\":false,\"omitted\":false},{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"date\",\"name\":\"Date\",\"type\":\"Date\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"image\",\"name\":\"Image\",\"type\":\"Link\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"},{\"id\":\"body\",\"name\":\"Body\",\"type\":\"RichText\",\"localized\":false,\"required\":false,\"validations\":[{\"enabledMarks\":[\"bold\",\"italic\",\"underline\",\"code\"],\"message\":\"Only bold, italic, underline, and code marks are allowed\"},{\"enabledNodeTypes\":[\"heading-1\",\"heading-2\",\"heading-3\",\"heading-4\",\"heading-5\",\"heading-6\",\"ordered-list\",\"unordered-list\",\"hr\",\"blockquote\",\"embedded-entry-block\",\"embedded-asset-block\",\"hyperlink\",\"entry-hyperlink\",\"asset-hyperlink\",\"embedded-entry-inline\"],\"message\":\"Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed\"},{\"nodes\":{}}],\"disabled\":false,\"omitted\":false},{\"id\":\"excerpt\",\"name\":\"Excerpt\",\"type\":\"Text\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false}]}"
+        },
+        "requestId": "30c9a846-a6d7-4005-be4c-e58fd81fa799"
+      }
+    }
+  },
+  {
+    "ts": "2022-12-31T04:17:57.877Z",
+    "level": "error",
+    "error": {
+      "name": "UnknownField",
+      "entity": {
+        "original": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "p39nycxzit31"
+              }
+            },
+            "id": "283eEzAwGfc2GgKFh4c5GX",
+            "type": "Entry",
+            "createdAt": "2022-01-25T21:41:08.356Z",
+            "updatedAt": "2022-02-08T21:40:59.886Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 23,
+            "publishedAt": "2022-02-08T21:40:59.886Z",
+            "firstPublishedAt": "2022-01-25T21:42:52.038Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "publishedCounter": 5,
+            "version": 24,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "blogPost"
+              }
+            }
+          },
+          "fields": {
+            "slug": {
+              "en-US": "hello-world"
+            },
+            "title": {
+              "en-US": "Hello World"
+            },
+            "date": {
+              "en-US": "2022-01-25T00:00-05:00"
+            },
+            "image": {
+              "en-US": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Asset",
+                  "id": "U3SK6xjRhpQRa9vJy8nyM"
+                }
+              }
+            },
+            "body": {
+              "en-US": {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Hello! This is a demo blog post used for development only. This uses a Contentful Rich Text field for content.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "5ZkiE2jhld2iLz7VBmMEeX",
+                          "type": "Link",
+                          "linkType": "Asset"
+                        }
+                      }
+                    },
+                    "content": [
+                    ],
+                    "nodeType": "embedded-asset-block"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "document"
+              }
+            },
+            "excerpt": {
+              "en-US": "This is an excerpt for the blog post."
+            }
+          }
+        },
+        "transformed": {
+          "metadata": {
+            "tags": [
+            ]
+          },
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "p39nycxzit31"
+              }
+            },
+            "id": "283eEzAwGfc2GgKFh4c5GX",
+            "type": "Entry",
+            "createdAt": "2022-01-25T21:41:08.356Z",
+            "updatedAt": "2022-02-08T21:40:59.886Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "publishedVersion": 23,
+            "publishedAt": "2022-02-08T21:40:59.886Z",
+            "firstPublishedAt": "2022-01-25T21:42:52.038Z",
+            "createdBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "updatedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "publishedCounter": 5,
+            "version": 24,
+            "publishedBy": {
+              "sys": {
+                "type": "Link",
+                "linkType": "User",
+                "id": "4SDtqAl8Y6iEC5454bbsbU"
+              }
+            },
+            "contentType": {
+              "sys": {
+                "type": "Link",
+                "linkType": "ContentType",
+                "id": "blogPost"
+              }
+            }
+          },
+          "fields": {
+            "slug": {
+              "en-US": "hello-world"
+            },
+            "title": {
+              "en-US": "Hello World"
+            },
+            "date": {
+              "en-US": "2022-01-25T00:00-05:00"
+            },
+            "image": {
+              "en-US": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Asset",
+                  "id": "U3SK6xjRhpQRa9vJy8nyM"
+                }
+              }
+            },
+            "body": {
+              "en-US": {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "Hello! This is a demo blog post used for development only. This uses a Contentful Rich Text field for content.",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  },
+                  {
+                    "data": {
+                      "target": {
+                        "sys": {
+                          "id": "5ZkiE2jhld2iLz7VBmMEeX",
+                          "type": "Link",
+                          "linkType": "Asset"
+                        }
+                      }
+                    },
+                    "content": [
+                    ],
+                    "nodeType": "embedded-asset-block"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": "",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "document"
+              }
+            },
+            "excerpt": {
+              "en-US": "This is an excerpt for the blog post."
+            }
+          }
+        }
+      },
+      "data": {
+        "status": 422,
+        "statusText": "Unprocessable Entity",
+        "message": "No field with id \"date\" found.",
+        "details": {
+          "errors": [
+            {
+              "name": "unknown",
+              "path": [
+                "fields",
+                "date"
+              ]
+            }
+          ]
+        },
+        "request": {
+          "url": "/spaces/523ugk1t5e7p/environments/master/entries/283eEzAwGfc2GgKFh4c5GX",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.5.20; feature library-import; sdk contentful-management.js/10.26.0; platform node.js/v18.12.1; os Windows/v18.12.1;",
+            "CF-Sequence": "55834e09-59d6-4827-949e-94a54bbaf613",
+            "Authorization": "Bearer ...sL7eA",
+            "user-agent": "node.js/v18.12.1",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Content-Type": "blogPost",
+            "Content-Length": 801
+          },
+          "method": "put",
+          "payloadData": "{\"metadata\":{\"tags\":[]},\"fields\":{\"slug\":{\"en-US\":\"hello-world\"},\"title\":{\"en-US\":\"Hello World\"},\"date\":{\"en-US\":\"2022-01-25T00:00-05:00\"},\"image\":{\"en-US\":{\"sys\":{\"type\":\"Link\",\"linkType\":\"Asset\",\"id\":\"U3SK6xjRhpQRa9vJy8nyM\"}}},\"body\":{\"en-US\":{\"data\":{},\"content\":[{\"data\":{},\"content\":[{\"data\":{},\"marks\":[],\"value\":\"Hello! This is a demo blog post used for development only. This uses a Contentful Rich Text field for content.\",\"nodeType\":\"text\"}],\"nodeType\":\"paragraph\"},{\"data\":{\"target\":{\"sys\":{\"id\":\"5ZkiE2jhld2iLz7VBmMEeX\",\"type\":\"Link\",\"linkType\":\"Asset\"}}},\"content\":[],\"nodeType\":\"embedded-asset-block\"},{\"data\":{},\"content\":[{\"data\":{},\"marks\":[],\"value\":\"\",\"nodeType\":\"text\"}],\"nodeType\":\"paragraph\"}],\"nodeType\":\"document\"}},\"excerpt\":{\"en-US\":\"This is an excerpt for the blog post.\"}}}"
+        },
+        "requestId": "b1f984ba-20ea-4eda-bfb1-18e89cb28115"
+      }
+    }
+  }
+]
