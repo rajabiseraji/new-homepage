@@ -1,21 +1,22 @@
 import * as React from "react"
 import { graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+// import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Container, Section, Text, SuperHeading } from "./ui"
 import * as styles from "./about-hero.css"
 
 export default function AboutHero(props) {
+  console.log(props);
   return (
     <Section>
       <Container>
         <SuperHeading className={styles.aboutHeroHeader}>
-          {props.heading}
+          {props.heading}  
         </SuperHeading>
         {props.text && (
           <Text className={styles.aboutHeroText}>{props.text}</Text>
         )}
       </Container>
-      <Container width="wide">
+      {/* <Container width="wide">
         {props.image && (
           <GatsbyImage
             alt={props.image.alt}
@@ -23,7 +24,7 @@ export default function AboutHero(props) {
             className={styles.aboutHeroImage}
           />
         )}
-      </Container>
+      </Container> */}
     </Section>
   )
 }
