@@ -7,11 +7,11 @@ import SEOHead from "../components/head"
 
 export default function Homepage(props) {
   const { homepage } = props.data
-
   return (
     <Layout>
       {homepage.blocks.map((block) => {
         const { id, blocktype, ...componentProps } = block
+        console.log(blocktype);
         const Component = sections[blocktype] || Fallback
         return <Component key={id} {...componentProps} />
       })}
@@ -36,6 +36,7 @@ export const query = graphql`
         id
         blocktype
         ...HomepageHeroContent
+        ...AboutHeroContent
         ...HomepageFeatureListContent
         ...HomepageCtaContent
         ...HomepageLogoListContent
