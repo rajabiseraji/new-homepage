@@ -11,10 +11,11 @@ import {
   Text,
   ButtonList,
 } from "./ui"
+import * as styles from "./benefit-list.css"
 
 export default function Feature(props) {
   return (
-    <Section padding={4} background="muted">
+    <Section padding={4} background="muted" className={styles.benfitListItem}>
       <Container>
         <Flex gap={4} variant="responsive">
           <Box width="half" order={props.flip ? 1 : null}>
