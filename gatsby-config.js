@@ -3,6 +3,7 @@ require("dotenv").config()
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
+const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
@@ -12,6 +13,12 @@ module.exports = {
     description: "A Gatsby Starter for building homepages with Contentful",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     {
       resolve: "gatsby-source-contentful",
       options: {
