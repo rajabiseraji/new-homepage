@@ -18,7 +18,7 @@ function Project(props) {
         <Icon
           alt={props.image.alt}
           image={props.image.gatsbyImageData}
-          size="small"
+          size="large"
         />
       )}
       <Space size={2} />
@@ -29,6 +29,8 @@ function Project(props) {
 }
 
 export default function ProjectList(props) {
+  console.log("in project");
+  console.log(props);
   return (
     <Section>
       <Container>
